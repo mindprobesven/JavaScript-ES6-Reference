@@ -6,6 +6,7 @@ const User = {
   firstName: 'Sven',
   lastName: 'Kohn',
   age: 38,
+  car: { color: 'red' },
   fullName() {
     return `${this.firstName} ${this.lastName}`;
   },
@@ -22,14 +23,19 @@ const User = {
 
 console.log(JSON.stringify(User));
 
-// Retrieves all string keys of all own properties.
+console.log('----------------------------------------');
+
+// Returns all string keys of all own properties.
 console.log(Object.getOwnPropertyNames(User));
 
-// Retrieves all string keys of all enumerable own (non-inherited) properties.
+// Returns all string keys of all enumerable own (non-inherited) properties.
 console.log(Object.keys(User));
 
-// Retrieves all keys of all own properties.
+// Returns all keys of all own properties.
 console.log(Reflect.ownKeys(User));
+
+// Returns property descriptors (writable, enumerable, configurable)
+console.log(Object.getOwnPropertyDescriptor(User, 'firstName'));
 
 console.log('----------------------------------------');
 
@@ -54,8 +60,3 @@ const arr = Object.entries(User).map(([key, value]) => {
 });
 
 console.log(arr);
-
-console.log('----------------------------------------');
-
-console.log(Object.getOwnPropertyDescriptor(User, 'firstName'));
-console.log(Object.getPrototypeOf(User));

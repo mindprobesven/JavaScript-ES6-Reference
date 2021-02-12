@@ -25,6 +25,12 @@ console.log(JSON.stringify(originalObject));
 
 console.log('---------------------------------------------------------');
 
+// METHOD 1: Object.assign
+// eslint-disable-next-line prefer-object-spread
+const shallowObjectCopyAssign = Object.assign({}, originalObject);
+console.log(JSON.stringify(shallowObjectCopyAssign));
+
+// METHOD 2: Spread operator - Preferred
 const shallowObjectCopy = { ...originalObject };
 
 /*
