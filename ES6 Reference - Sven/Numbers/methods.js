@@ -16,7 +16,7 @@ console.log(Number.isInteger(num4));  // false
 
 console.log('--------------------------------------------');
 
-// Number.isNaN doesn't coerce it argument to a number and is safe for non-numbers
+// Number.isNaN doesn't coerce its argument to a number and is safer for non-numbers
 console.log(Number.isNaN(num1));  // false
 console.log(Number.isNaN(num2));  // false
 console.log(Number.isNaN(num3));  // false
