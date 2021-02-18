@@ -1,19 +1,11 @@
 /* eslint-disable no-multi-spaces */
 
 // -------------------------------------------------------------------------------------------------------
-// Ararys - Methods
+// Ararys - Editing
 // -------------------------------------------------------------------------------------------------------
 
 const arr1 = ['a', 'b', 'a', 'c', 'd'];
 const arr2 = ['x', 'y', 'z'];
-
-// Array evaluation
-// typeof will incorrectly retrun object, better use instandeOf or isArray
-console.log(typeof arr1);           // object
-console.log(arr1 instanceof Array); // true
-console.log(Array.isArray(arr1));   // true
-
-console.log('--------------------------------------------');
 
 // Converting arrays to strings
 console.log(arr1.toString());
