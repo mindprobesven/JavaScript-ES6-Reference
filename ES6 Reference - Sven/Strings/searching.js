@@ -43,6 +43,6 @@ console.log(startsWith);    // true
 
 // endsWith() checks if a strings ends with search item
 const endsWith = str.endsWith('occurs!');
-console.log(endsWith);    // true
 
+console.log(endsWith);    // true
 console.log('-'.repeat(50));
