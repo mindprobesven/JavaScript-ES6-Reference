@@ -55,5 +55,12 @@ console.log(Reflect.ownKeys(sven));
 console.log(Object.getOwnPropertyDescriptor(sven, 'firstName'));
 // OUTPUT: { value: 'Sven', writable: true, enumerable: true, configurable: true }
 
+// An own property descriptor is one that is defined directly on the object and is
+// NOT inherited from the object's prototype.
 console.log(Object.getOwnPropertyDescriptor(sven, 'car'));
-// OUTPUT: undefined
+// OUTPUT: undefined, because car is inherited
+
+// Now we define car directly on the object
+sven.car = 'DeLorean';
+console.log(Object.getOwnPropertyDescriptor(sven, 'car'));
+// OUTPUT: { value: 'DeLorean', writable: true, enumerable: true, configurable: true }

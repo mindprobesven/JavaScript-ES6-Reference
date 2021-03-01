@@ -48,8 +48,9 @@ console.log('--------------------------------------------');
 const arr3 = ['a', 'b', 'a', 'c', 'd'];
 
 // Slices out a piece of an array into a new array
-// .slice(startAtIndex, upTo (but not including))
+// .slice(startAtIndex, upTo (but not including)(optional))
 let newArraySlice = arr3.slice(2);
+console.log(newArraySlice);   // [ 'a', 'c', 'd' ]
 
 const arr4 = ['a', 'b', 'a', 'c', 'd'];
 newArraySlice = arr4.slice(1, 3);

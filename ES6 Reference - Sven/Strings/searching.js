@@ -43,6 +43,9 @@ console.log(startsWith);    // true
 
 // endsWith() checks if a strings ends with search item
 const endsWith = str.endsWith('occurs!');
-
 console.log(endsWith);    // true
+
+console.log('--------------------------------------------');
+
+// repeat() append a number of copies to a string
 console.log('-'.repeat(50));
